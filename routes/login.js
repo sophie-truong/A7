@@ -1,5 +1,3 @@
-
-
 var data = require("../users.json");
 
 //function _isContains(json, value) {
@@ -23,7 +21,7 @@ var user = data.users[i];
 res.render('sip', user);
 break;
 }
-else if (data.users[i].name == "Test") {
+else {
 data.users[i].isUser = true;
 var user = data.users[i];
 res.render('sip', user);
